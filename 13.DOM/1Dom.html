@@ -1,0 +1,28 @@
+// Document Object Model
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_BOM</title>
+</head>
+<body>
+    <button class="button_Super" onclick="goBack()">goBack</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nostrum.</p>
+
+<script>
+    function goBack() {
+      window.history.back() //BOM
+    }
+</script>
+
+<script>
+    alert(location.href); //show current URL
+    if (confirm("Want to visit Google")){
+        location.href = "https://www.google.com";
+    }
+</script>
+</body>
+</html>

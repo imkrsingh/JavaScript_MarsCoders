@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // If Else Statement
+/*
+var tomr = 'Sunny';
+
+if (tomr == 'rain') {
+    document.writeln('take a raincoat');
+} else {
+    document.writeln('No need to take a raincoat');
+}
+*/
+
+//WAP that works out whether if a given year is a leap year or not?
+//--> A normal year has 365 days, leap years have 366, with an extra day in February.
+
+var year = 2023;
+
+if (year % 4 === 0) {
+    if (year % 100 === 0) {
+        if (year % 400 === 0) {
+
+            document.writeln("The year " + year + " is a leap year1");
+        }
+        else {
+            document.writeln("The year" + year + "is not a leap year1");
+        }
+    }
+    else {
+        document.writeln("The year " + year + " is a leap year2");
+    }
+}
+else {
+    document.writeln("The year" + year + "is not a leap year2");
+}
+
+//if (score = 0) {
+/*if (true) {    
+    document.writeln("OMG, we loss the game");
+} else {
+    document.writeln("Yay, we won the game");
+}*/
+
+// var age = 18;
+
+// if (age >= 18) {
+//     document.writeln("you are eligible to vote");
+// } else {
+//     document.writeln("you are not eligible to vote");    
+// }
+
+</script>
+</html>
