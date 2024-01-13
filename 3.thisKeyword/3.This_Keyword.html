@@ -1,0 +1,36 @@
+<!-- <script>
+    console.log(this);
+
+    const manish = {
+        name: " Manish Singh",
+        qualif: "B.tech",
+        sum: function(){
+            var add = 2+2;
+            console.log("Sum of two no. is " +add);
+            console.log(this.name);
+        }
+    }
+
+    manish.sum()
+</script> -->
+
+
+<script>
+
+    const manish = {
+        name: " Manish Singh",
+        qualif: "B.tech",
+        sum: function(){
+            var add = 2+2;
+            //console.log("Sum of two no. is " +add);
+            document.writeln(this.name + "<br>");
+
+            function child(){
+                var name = "Manish";
+                document.writeln("child method name: " +name + "<br>");
+            }
+            child();
+        }
+    }
+    manish.sum()
+</script>

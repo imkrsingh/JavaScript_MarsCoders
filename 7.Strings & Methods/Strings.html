@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //String
+
+/*let myName = "Manish Kumar Singh";
+let myLastName = 'Singh';
+
+let ytName = new String("Youtube Channel");
+
+document.write(myName);
+document.write(ytName);*/
+
+
+// String.length ---> length is a property
+/*let myName = "Manish Kumar Singh";
+document.write(myName.length);*/
+
+
+//Escape Character
+
+/*let text = "We are the so-called \"Vikings\" from the \'north\'.";
+document.write(text);*/
+
+/*let text = 'We are the so-called "Vikings" from the north.';
+let text1 = "We are the so-called 'Vikings' from the north.";
+document.write(text);
+document.write(text1);*/
+
+
+
+// Finding a String in a String
+//String.indexOf()
+
+/*const myBioData = 'I am Manish Kumar Singh';
+document.write(myBioData.indexOf("Singh"));*/
+
+/*const myBioData = 'I am anish Kumar Singh';
+document.write(myBioData.indexOf("a",4));*/
+
+
+// lastIndexOf()
+/*const myBioData = 'I am Manish Kumar Singh';
+document.write(myBioData.lastIndexOf("Singh"))*/
+
+
+//search()
+/*const myBioData = 'I am Manish Kumar Singh';
+let sData = myBioData.search("Singh");
+document.write(sData);*/
+
+
+//slice()
+/*var str = "Apple, Banana, Kiwi";
+
+let res = str.slice(0,4);
+document.write(res);*/
+
+
+//11: Challenege Time
+// Display only 280 character of a string like the one used in Twitter?
+
+/*let myTweets = `"the University of California and Harvard—occupied first and
+second place in the list of donations to the Kerry campaign by employee
+groups, ahead of Time Warner, Goldman Sachs, Microsoft et al. Employees
+at both universities gave 19 times as much to John Kerry as to George Bush.
+Meanwhile, a new national survey of more than 1,000 academics by Daniel
+Klein, of Santa Clara University, shows that Democrats outnumber
+Republicans by at least seven to one in the humanities and social sciences."`
+
+let myActualTweet = myTweets.slice(0,280);
+document.write(myActualTweet);
+document.write(myActualTweet.length);*/
+
+
+// substring()
+/*var str = "Apple, Banana, Kiwi";
+let res = str.substring(0, 4)
+document.write(res);*/
+
+//substr()
+/*var str = "Apple, Banana, Kiwi";
+let res = str.substr(-4)
+document.write(res);*/
+
+
+// Replacing String Content()
+//String.replace(searchFor, replaceWith)
+/*let myBioData = `I am Manish Kumar Singh`;
+
+let replaceData = myBioData.replace('Kumar', 'Kr.')
+document.write(replaceData);*/
+
+//Extracting String Characters
+//charAt()
+/*let str = "HELLO WORLD"
+document.write(str.charCodeAt(6));*/
+
+
+//12:Challenge Time
+/*let str = "HELLO WORLD"
+document.write(str.charCodeAt(10));*/
+
+
+// property Access
+/*let str = "HELLO WORLD"
+document.write(str[1]);*/
+
+
+// Other useful methods
+// Uppercase() / Lowercase() 
+/*let myName ="Manish sIngH"
+document.write(myName.toUpperCase())
+document.write(myName.toLowerCase())*/
+
+//The concat() method
+// concat() joins two or more strings
+
+/*let fName = "Manish"
+let lName = "Singh"
+document.write(fName.concat(lName));
+document.write(fName.concat(" ", lName));*/
+
+//trim()
+/*var str = "        Hello World!         "
+document.write(str.trim());*/
+
+//split()
+var txt = "a,b,c,d,e";
+document.writeln(txt.split(",") +"<br>");
+document.writeln(txt.split(" ") +"<br>");
+document.writeln(txt.split("|") +"<br>");
+
+
+
+</script>
+</html>

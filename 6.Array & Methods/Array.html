@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+    //Array Subsection 1
+//Declaration of an Array
+/*var Names =['Manish', 'Kumar', 'Singh', 25, null];
+document.write(Names);*/
+
+
+//Traversal in Array
+/*var Names =['Manish', 'Kumar', 'Singh', 25, null];
+//document.write(Names[2]);
+
+//if we want to check the lenght of element of and array
+document.write(Names.length);
+document.write(Names[Names.length -1]);*/
+
+
+// we use for loop to navigate
+/*var myFriends = ['vinod','ramesh','arjun','vishal'];
+
+for(var i=0; i<myFriends.length; i++){
+    document.write(myFriends[i]);
+}*/
+
+
+//After ES6 we have for..in and for..of loop too
+//for in loop
+/*var myFriends = ['vinod', 'ramesh', 'arjun', 'vishal'];
+
+for (let elements in myFriends) {
+    document.write(elements);
+}*/
+
+// for of loop
+/*var myFriends = ['vinod', 'ramesh', 'arjun', 'vishal'];
+
+for (let elements of myFriends) {
+    document.write(elements);
+}*/
+
+//for Each loop
+/*var myFriends = ['vinod', 'ramesh', 'arjun', 'vishal'];
+
+myFriends.forEach(function(element, index, array){
+    document.write(element+ " index : " + index + " => " + array);
+});*/
+
+
+//for Each loop with Arrow Function
+/*var myFriends = ['vinod', 'ramesh', 'arjun', 'vishal'];
+
+myFriends.forEach((element, index, array) => {
+    document.write(element + " index : " + index + " => " + array);
+});*/
+
+
+//Array Subsection 2 --> Searching and Filter in an Array
+
+//indexOf()
+/*const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let index = fruits.indexOf("Apple")
+document.write(index);*/
+
+
+//find()
+//filter()
+
+//sort
+/*const arr1 = [1, 30, 4, 21, 100000, 99]
+document.write(arr1.sort());
+
+/*const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.write(fruits.sort());*/
+
+// Array Subsection 3 -->  How to insert, add, replace and delete elements in array(CRUD)
+//push()
+/*const animals = ['pigs', 'goat', 'sheep'];
+
+const count = animals.push('chicken');
+document.write(animals);
+document.write(count);
+
+//Multiple data insert in array
+animals.push('chicken', 'cow', 'parrot',)
+document.write(animals);*/
+
+//unshift()
+/*const animals = ['pigs', 'goat', 'sheep'];
+
+const count = animals.unshift('chicken', 'cow');
+document.write(animals);
+document.write(count);*/
+
+//pop()
+/*const fruits = ['Apple', 'Mango', 'Banana', 'Orange', 'Grapes'];
+document.write(fruits);
+document.write(fruits.pop());
+document.write(fruits);*/
+
+//shift()
+/*const fruits = ['Apple', 'Mango', 'Banana', 'Orange', 'Grapes'];
+//document.write(fruits);
+document.write(fruits.shift());
+document.write(fruits);*/
+
+
+//9:Challenege Time
+// first method
+/*const months = ['Jan', 'march', 'April', 'June', 'July'];
+
+const count = months.push('Dec');
+document.write(months);
+document.write(count);*/
+
+
+//splice()
+
+// 1: Add Dec at the end of an array?
+// 2: What is the return value of splice method?
+// 3: Update march to March (update)?
+// 4: Delete June from an array?
+
+/*const months = ['Jan', 'march', 'April', 'June', 'July'];
+//sol1:
+const newMonths = months.splice(4,0, "Dec");
+document.write(months);*/
+
+//sol2:
+//document.write(newMonths);
+
+//sol3:
+/*const months = ['Jan', 'march', 'April', 'June', 'July'];
+
+
+const updateMonth = months.splice(1,1, 'March');
+document.write(months);*/
+
+
+//Array Subsection 4 --> Map and Reduce Method
+
+//map()
+//map() Example 1.
+/*var arr = [1,2,3,4];
+var b = arr.map(Manish);
+
+function Manish(x) {
+    return x*2;
+}
+document.write(b);
+*/
+
+//map() Example 2.
+/*const array1 = [1, 4, 9, 16, 25];
+
+let newArr = array1.map((curElm, index, arr) => {
+    return `Index no = ${index} and the value is ${curElm} belong to ${arr}`
+})
+document.write(newArr);*/
+
+//map() Example 3.
+/*const array1 = [1, 4, 9, 16, 25];
+// num > 9 ---> num less than 9 hona chahiye
+
+let newArr = array1.map((curElm, index, arr) => {
+    return curElm > 9;
+})
+document.write(array1);
+document.write(newArr);*/
+
+
+// Challenege Time
+//1: Find the square root of each element in an array?
+
+//Sol1:
+/*let arr = [25, 36, 49, 64, 81];
+
+let sqrarr = arr.map((curElm) => {
+    return Math.sqrt(curElm);
+})
+document.write(arr);
+document.write(sqrarr);*/
+
+
+//2: Multiply each element by 2 and return only those elements which are greater than 10?
+
+//Sol2:
+/*let arr = [2,3,4,6,8];
+//we can use the chaining --> filter()
+let arr2 = arr.map((curElm) =>{
+return curElm * 2;
+}).filter((curElm) =>{
+    return curElm > 10;
+})
+document.write(arr2);*/
+
+
+//flat()
+const arr = [
+    ['zone_1', 'zone_2'],
+    ['zone_3', 'zone_4'],
+    ['zone_5', 'zone_6'],
+    ['zone_7', 'zone_8'],
+];
+let flatArr = arr.reduce((accum, currVal) => {
+    return accum.concat(currVal);
+})
+document.write(flatArr);
+
+
+
+</script>
+</html>
