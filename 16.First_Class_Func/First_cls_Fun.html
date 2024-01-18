@@ -1,0 +1,50 @@
+<script>
+// 1. Function Assign in Variable
+
+// const thankYou = function () {
+//     document.writeln("Thank you so much for love");
+// } 
+
+// thankYou();
+
+
+//2.
+
+// const youtube = {
+//     name : "Manish_Singh",
+//     qualif : function() {
+//         document.writeln("I did B.tech in CSE" +"<br>");
+//     }
+// }
+
+// youtube.qualif();
+// document.writeln(youtube.name);
+
+
+//3. Pass a functions as an Argument
+
+// const myName = () => {
+//     return "Hello";
+// }
+
+// const greeting = (sayHi, name, last) => {
+//     document.writeln(sayHi()+ " "+name +last);
+// }
+
+// greeting(myName,"Manish", " kumar Singh");
+
+
+//3. Returning Functions
+
+function a(){
+    return function b(){
+        document.writeln("Thank you so much for love...");
+    }
+}
+
+//a()();
+
+const c = a();
+c();
+
+</script>

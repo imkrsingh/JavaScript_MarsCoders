@@ -1,0 +1,38 @@
+<script>
+// Pass by Value
+
+    // let a = 5;
+    // let b = a;
+    
+    // b = b+5;
+
+    // document.writeln(a + "<br>");
+    // document.writeln(b);
+
+
+
+// Pass by Reference
+
+// const obj1 = {
+//     user : "manish",
+//     pass : "password"
+// }
+
+// const obj2 = obj1;
+
+// obj2.pass = "anything";
+
+// console.log(obj1 + "<br>");
+// console.log(obj2);
+
+
+const arr1 = [1,2,3,4];
+
+const arr2 = [].concat(arr1);
+
+arr2.push(5);
+
+document.writeln(arr1 +"<br>");
+document.writeln(arr2);
+
+</script>
