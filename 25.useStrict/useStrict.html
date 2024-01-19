@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+
+<!-- <h3>Using a variable without declaring it, is not allowed.</h3> -->
+<!-- <script>
+"use strict";
+x = 3.14;  // This will cause an error (x is not defined).
+//var x = 3.14
+console.log(x)
+</script> -->
+
+
+<!-- Example.2 -->
+<!-- <h2>Global "use strict" declaration.</h2>
+<script>
+    "use strict";
+    myFunction();
+    
+    function myFunction() {
+       y = 3.14;   // This will cause an error (y is not defined)
+       //console.log(y)
+       //var y =7.14;
+      //document.write(y)
+    }
+    </script> -->
+
+
+    <!-- Example.3 -->
+    <!-- <p>"use strict" in a function will only cause errors in that function.</p>
+    <script>
+        x = 3.14;    // This will not cause an error.
+        myFunction();
+        
+        function myFunction() {
+          "use strict";
+          y = 3.14;  // This will cause an error (y is not defined).
+        }
+        </script> -->
+
+
+    <!-- Example.4 -->
+        <!-- <script>
+            "use strict";
+            x = {p1:10, p2:20};   // This will cause an error (x is not defined).
+            console.log(x)
+        </script> -->
+
+
+    <!-- Example.5 -->    
+    <!-- <script>
+    "use strict";
+    let x = 3.14;
+    delete x;     // This will cause an error 
+    console.log(x)
+    </script> -->
+
+
+    <!-- Example.6 --> 
+    <!-- <h3>Octal numeric literals are not allowed.</h3>
+    <script>
+        "use strict";
+        let x = 010;   // This will cause an error 
+        console.log(x)
+    </script> -->
+
+
+    <!-- Example.7 --> 
+    <!-- <h3>The string "arguments" cannot be used as a variable.</h3>
+    <script>
+        "use strict";
+        let arguments = 3.14;   // This will cause an error 
+        console.log(arguments)
+        </script> -->
+
+
+    <!-- Example.8 --> 
+    <h3>Future reserved keywords are not allowed in strict mode.</h3>  
+    <script>
+        "use strict";
+        let public = 1500;   // This will cause an error 
+        console.log(public)
+    </script>
+</body>
+</html>
