@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript async / await</h1>
+
+<p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+
+<h2 id="demo"></h2>
+
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve) {
+    setTimeout(function() {
+        resolve("Hey I am Manish Singh");
+    }, 3000);
+  });
+  document.getElementById("demo").innerHTML = await myPromise;
+  //document.write(await myPromise)
+}
+
+myDisplay();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+// Define a function called myDisplayer that takes a parameter 'some'
+function myDisplayer(some) {
+  // Set the innerHTML of the HTML element with the id 'demo' to the value of 'some'
+  document.getElementById("demo").innerHTML = some;
+}
+
+// Create a new Promise object
+let myPromise = new Promise(function(myResolve, myReject) {
+  // Declare a variable 'x' and initialize it with the value 0
+  let x = 0;
+
+  // some code (try to change x to 5)
+
+  // Check if the value of 'x' is equal to 0
+  if (x == 0) {
+    // If true, call 'myResolve' with the argument "OK, It's Successful"
+    myResolve("OK, It's Successful ");
+  } else {
+    // If false, call 'myReject' with the argument "Error"
+    myReject("Error");
+  }
+});
+
+// Handle the promise using the 'then' method
+myPromise.then(
+  // If the promise is resolved, execute this function with the resolved value
+  function(value) {
+    // Call the 'myDisplayer' function with the resolved value
+    myDisplayer(value);
+  },
+  // If the promise is rejected, execute this function with the rejection reason
+  function(error) {
+    // Call the 'myDisplayer' function with the error message
+    myDisplayer(error);
+  }
+);

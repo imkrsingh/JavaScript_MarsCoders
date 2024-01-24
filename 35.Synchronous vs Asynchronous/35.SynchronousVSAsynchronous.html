@@ -1,0 +1,33 @@
+<script>
+// //Synchronous
+// const fun2 = () => {
+//     console.log('fun2 is starting');
+// }
+
+// const fun1 = () => {
+//     console.log('fun1 is starting');
+//     fun2();
+//     console.log('fun1 is ending');
+// }
+
+// fun1();
+
+
+//Asynchronous
+const fun2 = () => {
+
+    setTimeout( () => {
+        document.write('fun2 is starting');
+    }, 3000);
+    
+}
+
+const fun1 = () => {
+    document.write('fun1 is starting');
+    fun2();
+    document.write('fun1 is ending');
+}
+
+fun1();
+
+</script>

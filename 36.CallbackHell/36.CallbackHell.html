@@ -1,0 +1,41 @@
+<script>
+// API
+
+// 1: 2second student roll number
+// 2: 2second name and age
+// 3: 2second gender
+
+const getRollNo = () => {
+    setTimeout( () => {
+        document.write('API getting roll no'+"<br>");
+        let roll_no = [1,2,3,4,5];
+        document.write(roll_no);
+
+        setTimeout( (roll_no) => {
+            const biodata = {
+                name : 'Manish',
+                age : 25
+            }
+            document.write(` My roll number is ${roll_no}. My name is ${biodata.name} and I am ${biodata.age} years old.`+"<br>");
+
+            setTimeout( (name) =>{
+                biodata.gender = 'male';
+                document.write(`My roll number is ${roll_no}. My name is ${biodata.name} and I am ${biodata.age} years old. I am an alpha ${biodata.gender}.`+"<br>");
+            },2000,biodata.name)
+
+        },2000,roll_no[1])
+
+    },2000);
+}
+
+getRollNo();
+
+
+
+
+
+
+
+
+
+</script>

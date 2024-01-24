@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    //Code 1
+    const youtuber1 = {
+        name: "Manish_Singh",
+        content : "Programming",
+        feature : function(rating,support){
+            document.write(`very friendly way of teaching. ${this.name} is my fav ${this.content} channel. I will love to give ${rating} star. Please ${support} to ${this.name} channel.`);
+        }
+    }
+    
+    // youtuber1.feature(5, "Subscribe");
+    
+    const youtube2 = {
+        name : "Manish_Coders",
+        content : "Programming & Vlog" 
+    }
+    
+    youtuber1.feature.call(youtube2,5,"Subscribe");
+    
+    </script>
+</html>
