@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!-- Create a Cookie with JavaScript -->
+<script>
+    document.cookie = "item = milk,Breads"
+
+    // You can also add an expiry date (in UTC time). By default, the cookie is deleted when the browser is closed:
+    document.cookie = "username= Manish Singh; expires=Thu, 18 Dec 2024 12:00:00 UTC";
+
+
+    // Change a Cookie with JavaScript
+// With JavaScript, you can change a cookie the same way as you create it:
+    document.cookie = "Tech = React.js with TS; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/";
+</script>
+
+<!-- Prog.2 -->
+<script>
+    //read Cookie in alert
+    let x = document.cookie;
+
+    alert(x)
+
+    //read Cookie in Console
+    console.log(x);
+
+    // Cookie ko delete karne ke liye date ko past main set karna hai
+</script>
+</html>

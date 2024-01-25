@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Fetch API</h1>
+    <h2>The fetch() Method</h2>
+    <p id="demo">Fetch a file to change this text.</p>
+
+    <!-- Prog.1 -->
+    <!-- <script>
+        let file = "fetch_info.txt"
+        fetch(file)
+            .then(x => x.text()) // Convert the response to text
+            .then(y => document.getElementById("demo").innerHTML = y);
+    </script> -->
+
+
+    <!-- Prog.2 | Fetch is based on async and await. The example might be easier to understand like this: -->
+    <!-- <script>
+      getText("fetch_info.txt");
+
+      async function getText(file) {
+        let x = await fetch(file);
+        let y = await x.text();
+        document.getElementById("demo").innerHTML = y;
+      }
+    </script> -->
+
+
+    <!-- Prog.3 -->
+    <script>
+        getText("fetch_info.txt");
+        
+        async function getText(file) {
+          let myObject = await fetch(file);
+          let myText = await myObject.text();
+          document.getElementById("demo").innerHTML = myText;
+        }
+        </script>
+  </body>
+</html>
