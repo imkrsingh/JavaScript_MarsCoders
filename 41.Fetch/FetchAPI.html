@@ -1,0 +1,26 @@
+<p id="apibook"></p>
+
+<script>
+  fetch("https://api.publicapis.org/entries")
+    .then((apidata) => {
+      //console.log(apidata);
+      return apidata.json();
+    })
+    .then((actualdata) => {
+        console.log(actualdata);
+        
+        console.log(actualdata.entries[101]);
+        //console.log(actualdata.entries[101].API);
+        
+      //const mydata = actualdata.entries[101].API;
+
+       const mydata = actualdata.entries[101];
+
+      //document.getElementById('apibook').innerHTML = mydata
+
+       document.getElementById('apibook').innerHTML = `The name of the book is ${mydata.API}. The categories of book is ${mydata.Category}. The link of this book is ${mydata.Link}`
+    })
+    .catch((error) => {
+      console.log(`The Errorr: ${error}`);
+    });
+</script>
